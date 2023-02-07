@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1009277609496",
+    "project_id": "login-firebase-miguel",
+    "storage_bucket": "login-firebase-miguel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009277609496:android:b2b245593e5cc61bb7056d",
+        "android_client_info": {
+          "package_name": "com.example.login_firebase_miguel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009277609496-8iuthaitdgo6f8krp64si1rn1ms1hf3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login_firebase_miguel",
+            "certificate_hash": "09bacf4b4509ceee929a5c6929ff9ca75680052a"
+          }
+        },
+        {
+          "client_id": "1009277609496-kecta8si1ei95s5f331jrl7pp8iv48gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ8lcq9sOatlcfmBp3nMNJt-c3gY6Ghkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009277609496-kecta8si1ei95s5f331jrl7pp8iv48gs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
