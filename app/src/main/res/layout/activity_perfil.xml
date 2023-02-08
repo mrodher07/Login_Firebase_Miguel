@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".perfilActivity">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="732dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pantalla de Usuario"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivOpciones"
+                android:layout_width="158dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/iconoopciones" />
+
+            <ImageView
+                android:id="@+id/ivCerrar"
+                android:layout_width="158dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/iconosalir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Usuario"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No user"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Nacionalidad"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNacionalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No country"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Edad"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Age"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
