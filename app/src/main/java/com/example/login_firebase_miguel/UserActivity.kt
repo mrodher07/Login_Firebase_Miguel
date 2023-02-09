@@ -1,6 +1,7 @@
 package com.example.login_firebase_miguel
 
 import android.content.ContentValues
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -30,8 +31,10 @@ class UserActivity : AppCompatActivity() {
         ).addOnCompleteListener{
 
             if(it.isSuccessful){
-                //abrirPerfil()
                 Toast.makeText(this, "Registracion correcta", Toast.LENGTH_SHORT).show()
+                println("r "+email)
+                writeNewUser(email)
+                abrirPerfil()
             }else{
                 //showErrorAlert()
             }
@@ -39,8 +42,12 @@ class UserActivity : AppCompatActivity() {
         }
     }
 
-    fun writeNewUser(email:String) {
+    fun abrirPerfil(){
+        val enviar = Intent(this, perfilActivity::class.java)
+        startActivity(enviar)
+    }
 
+    fun writeNewUser(email:String) {
         val db = Firebase.firestore
 
         val data = hashMapOf(
@@ -53,8 +60,7 @@ class UserActivity : AppCompatActivity() {
         db.collection("user").document(email)
             .set(data)
             .addOnSuccessListener { Log.d(ContentValues.TAG, "DocumentSnapshot successfully written!") }
-            .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error writing document", e) }
-
+            .addOnFailureListener{ e -> println(e.message)}
     }
 
 

@@ -68,17 +68,14 @@ class MainActivity : AppCompatActivity() {
         Companion.RC_SIGN_IN)
     }
 
-    //Escribimos usuario en la bbdd
     fun writeNewUser(email:String) {
         val db = Firebase.firestore
-
         val data = hashMapOf(
             "email" to email,
             "usuario" to "nouser",
             "nacionalidad" to "nonacionality",
             "edad" to "0"
         )
-
         db.collection("user").document(email)
             .set(data)
             .addOnSuccessListener { Log.d(ContentValues.TAG, "DocumentSnapshot successfully written!") }
@@ -108,9 +105,6 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
-
-
-
 
     fun abrirPerfil(){
         val enviar = Intent(this, perfilActivity::class.java)

@@ -4,4 +4,9 @@
     <string name="borrarUser">Borrar Usuario</string>
     <string name="msg_borraruser">¿Quieres borrar este usuario?</string>
     <string name="msg_borraruser2">Usuario eliminado</string>
+    <string name="actualizarUser">Actualizar Usuario</string>
+    <string name="msg_actualizarUser">Se ha actualizado el nombre de usuario</string>
+    <string name="actualizarNacio">Actualizar nacionalidad</string>
+    <string name="msg_actualizarNacio">Se ha actualizado la nacionalidad</string>
+    <string name="actualizarEdad">Actualizar Edad</string>
 </resources>
